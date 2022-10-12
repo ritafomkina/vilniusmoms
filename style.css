@@ -54,12 +54,24 @@ html {
     box-sizing: content-box;
     padding: 0px 15px 0px 15px;
   }
-/*
-  @media screen and (min-width: 360px) and (max-width: 440px) {
+
+  @media screen and (min-width: 701px) and (max-width: 1000px) {
     .wrapper  {
-        max-width: 360px;
+        max-width: 670px;
     }
-  } */
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    .wrapper  {
+        max-width: 470px;
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 500px) {
+    .wrapper  {
+        max-width: 330px;
+    }
+  }
 
 
   .section {
