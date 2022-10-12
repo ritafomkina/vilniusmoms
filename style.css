@@ -54,6 +54,13 @@ html {
     box-sizing: content-box;
     padding: 0px 15px 0px 15px;
   }
+/*
+  @media screen and (min-width: 360px) and (max-width: 440px) {
+    .wrapper  {
+        max-width: 360px;
+    }
+  } */
+
 
   .section {
     min-height: 50px;
