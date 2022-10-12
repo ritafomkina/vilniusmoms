@@ -67,7 +67,13 @@ html {
     }
   }
 
-  @media screen and (min-width: 360px) and (max-width: 500px) {
+  @media screen and (min-width: 411px) and (max-width: 500px) {
+    .wrapper  {
+        max-width: 410px;
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 410px) {
     .wrapper  {
         max-width: 360px;
     }
