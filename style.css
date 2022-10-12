@@ -57,19 +57,19 @@ html {
 
   @media screen and (min-width: 701px) and (max-width: 1000px) {
     .wrapper  {
-        max-width: 670px;
+        max-width: 700px;
     }
   }
 
   @media screen and (min-width: 501px) and (max-width: 700px) {
     .wrapper  {
-        max-width: 470px;
+        max-width: 500px;
     }
   }
 
   @media screen and (min-width: 360px) and (max-width: 500px) {
     .wrapper  {
-        max-width: 330px;
+        max-width: 360px;
     }
   }
 
