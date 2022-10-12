@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    /* list-style: none; */
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  /*-------------general-styles-----------*/
+
+  body {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4B4744;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #95B4A7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .section {
+    min-height: 50px;
+    padding: 20px 0px;
+    background-color: #D6D0C6;
+}
+
+.start-section {
+    background-color: #E4DFD7;
+}
+.pregnancy-section {
+    background-color: #D6D0C6;
+}
+
+.birth-section {
+    /* background-color: #f8e7cd; */
+}
+.toddler-section {
+    /* background-color: #c8b9af; */
+}
+.links-section {
+    /* background-color:  #d3ccc1; */
+}
+
+.feedback-section {
+    /* background-color: #e3bea7; */
+}
+
+details {
+    padding: 5px 20px;
+}
+
+
+
+  h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 27px;
+  }
+
+
+.start-text {
+    padding: 20px 0px;
+}
+
+
+.level-one-title {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+.level-two-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.level-three-title {
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
+.text-container {
+    margin: 10px 0px;
+}
+.options {
+}
+.text {
+    margin: 10px 0px;
+}
+
+
+ol, ul {
+    padding: 0px 33px;
+}
+
+
+.link {
+    font-style: italic;
+    position: relative;
+
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(47, 43, 43);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.list-item {
+    margin-bottom: 5px;
+}
+
+.feedback-link {
+    color: #4B4744;
+    margin-left: 10px;
+    display: flex;
+
+}
+.feedback-link::after {
+    content: "";
+    background-image: url(assets/logo/telegram-logo-svgrepo-com.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.feedback-link:hover {
+color: #100d0b;
+}
