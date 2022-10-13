@@ -208,7 +208,7 @@ ul {
 @media screen and (min-width: 411px) and (max-width: 500px) {
   .wrapper {
     width: 411px;
-    padding: 0px 20px;
+    padding: 0px 7px;
   }
   .h1 {
     font-size: 40px;
