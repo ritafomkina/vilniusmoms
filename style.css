@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 *,
@@ -30,8 +32,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #4b4744;
-  min-height: 100vh;
-  min-width: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
