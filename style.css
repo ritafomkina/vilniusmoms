@@ -206,9 +206,9 @@ ul {
 }
 
 @media screen and (min-width: 411px) and (max-width: 500px) {
-  .wrapper {
-    width: 411px;
-    padding: 0px 7px;
+  .wrapper {git
+    max-width: 500px;
+    padding: 0px 5px;
   }
   .h1 {
     font-size: 40px;
@@ -216,10 +216,10 @@ ul {
   }
 
   .text {
-    font-size: 20px;
+    font-size: 22px;
   }
   .start-text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
