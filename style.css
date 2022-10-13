@@ -201,7 +201,7 @@ ul {
   details {
     padding: 5px 15px;
   }
-  .h1 {
+  h1 {
     font-size: 40px;
     line-height: 0px;
   }
@@ -213,43 +213,40 @@ ul {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 360px) and (max-width: 500px) {
   .wrapper {
     max-width: 100%;
     padding: 0px 22px;
   }
   details {
-    padding: 5px 10px;
+    padding: 5px 5px;
   }
-  .h1 {
-    font-size: 40px;
-    line-height: 0px;
+  h1 {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .level-one-title {
+    font-size: 25px;
+  }
+
+  .level-two-title {
+    font-size: 20px;
+  }
+
+  .level-three-title {
+    font-size: 18px;
+  }
+  .start-text {
+    padding: 15px 0px;
   }
 
   .text {
-    font-size: 22px;
+    font-size: 18px;
   }
   .start-text {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 340px) and (max-width: 399px) {
-  .wrapper {
-    max-width: 100%;
-    padding: 0px 22px;
-  }
-  details {
-    padding: 5px 10px;
-  }
-  .h1 {
-    font-size: 40px;
-    line-height: 0px;
-  }
-  .text {
-    font-size: 20px;
-  }
-  .start-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
