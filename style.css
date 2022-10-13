@@ -184,14 +184,18 @@ ul {
 
 @media screen and (min-width: 701px) and (max-width: 1000px) {
   .wrapper {
-    min-width: 700px;
+    max-width: 100%;
+    padding: 0px 22px;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
   .wrapper {
-    width: 500px;
-    margin: 0;
+    max-width: 100%;
+    padding: 0px 22px;
+  }
+  details {
+    padding: 5px 15px;
   }
   .h1 {
     font-size: 40px;
@@ -207,8 +211,11 @@ ul {
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .wrapper {
-    max-width: 400px;
-    padding: 0px 5px;
+    max-width: 100%;
+    padding: 0px 22px;
+  }
+  details {
+    padding: 5px 10px;
   }
   .h1 {
     font-size: 40px;
@@ -219,14 +226,17 @@ ul {
     font-size: 22px;
   }
   .start-text {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 340px) and (max-width: 399px) {
   .wrapper {
-    width: 360px;
-    padding: 0px 20px;
+    max-width: 100%;
+    padding: 0px 22px;
+  }
+  details {
+    padding: 5px 10px;
   }
   .h1 {
     font-size: 40px;
