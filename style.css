@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
-  max-height: 100vh;
-  max-width: 100vh;
+  /* max-height: 100vh; */
+  /* max-width: 100vh; */
 }
 
 *,
@@ -73,7 +73,7 @@ h6 {
 }
 
 .feedback-section {
-  padding: 0px 0px 15px 0px;
+  padding: 20px 0px;
 }
 
 details {
@@ -121,6 +121,10 @@ h2 {
 ol,
 ul {
   padding: 0px 33px;
+}
+
+table, th, td {
+  border:1px solid black;
 }
 
 .link {
@@ -176,6 +180,9 @@ ul {
 }
 
 @media screen and (min-width: 701px) and (max-width: 1000px) {
+  .section {
+    /* max-width: 100%; */
+  }
   .wrapper {
     max-width: 100%;
     padding: 0px 22px;
@@ -192,7 +199,7 @@ ul {
   }
   h1 {
     font-size: 40px;
-    line-height: 0px;
+    line-height: 60px;
   }
   .text {
     font-size: 20px;
@@ -217,7 +224,7 @@ ul {
     background-color: #d6d0c6;
   }
   .start-section {
-    padding: 15px 0px;
+    padding: 15px 0pxg;
   }
   .feedback-section {
     padding: 15px 0px;
