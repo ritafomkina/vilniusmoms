@@ -72,16 +72,6 @@ h6 {
   background-color: #d6d0c6;
 }
 
-.birth-section {
-  /* background-color: #f8e7cd; */
-}
-.toddler-section {
-  /* background-color: #c8b9af; */
-}
-.links-section {
-  /* background-color:  #d3ccc1; */
-}
-
 .feedback-section {
   padding: 0px 0px 15px 0px;
 }
@@ -123,8 +113,7 @@ h2 {
 .text-container {
   margin: 10px 0px;
 }
-.options {
-}
+
 .text {
   margin: 10px 0px;
 }
@@ -221,6 +210,17 @@ ul {
   details {
     padding: 5px 5px;
   }
+
+  .section {
+    min-height: 50px;
+    padding: 0;
+    background-color: #d6d0c6;
+  }
+  .feedback-section {
+    padding: 15px 0px;
+
+  }
+
   h1 {
     font-size: 38px;
     line-height: 60px;
