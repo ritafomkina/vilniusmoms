@@ -205,9 +205,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 411px) and (max-width: 500px) {
-  .wrapper {git
-    max-width: 414px;
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .wrapper {
+    max-width: 400px;
     padding: 0px 5px;
   }
   .h1 {
@@ -223,7 +223,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 410px) {
+@media screen and (min-width: 340px) and (max-width: 399px) {
   .wrapper {
     width: 360px;
     padding: 0px 20px;
