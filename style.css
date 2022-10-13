@@ -216,6 +216,9 @@ ul {
     padding: 0;
     background-color: #d6d0c6;
   }
+  .start-section {
+    padding: 15px 0px;
+  }
   .feedback-section {
     padding: 15px 0px;
 
