@@ -36,6 +36,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: #d6d0c6;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 h1,
