@@ -207,7 +207,7 @@ ul {
 
 @media screen and (min-width: 411px) and (max-width: 500px) {
   .wrapper {git
-    max-width: 500px;
+    max-width: 414px;
     padding: 0px 5px;
   }
   .h1 {
