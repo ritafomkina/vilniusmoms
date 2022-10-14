@@ -221,7 +221,7 @@ table, th, td {
   .section {
     min-height: 50px;
     padding: 0;
-    background-color: #d6d0c6;
+    /* background-color: #d6d0c6; */
   }
   .start-section {
     padding: 20px 0px 15px;
