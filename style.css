@@ -189,7 +189,7 @@ table, th, td {
 @media screen and (min-width: 501px) and (max-width: 700px) {
   .wrapper {
     max-width: 100%;
-    /* padding: 0px 22px; */
+    padding: 20px 22px;
   }
 
   .footer {
@@ -217,28 +217,27 @@ table, th, td {
 @media screen and (min-width: 360px) and (max-width: 500px) {
   .wrapper {
     max-width: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 15px 22px;
   }
+
   details {
     padding: 5px 5px;
   }
 
   .section {
     min-height: 50px;
-    padding: 0;
-    /* background-color: #d6d0c6; */
+    padding: 10px 0px;
   }
   .header {
     padding: 0;
   }
 
-  .main {
-    padding: 20px 0px;
-  }
   .footer {
-    padding: 15px 0px;
+    padding: 0;
+  }
 
+  .feedback-link {
+    font-size: 18px;
   }
 
   h1 {
