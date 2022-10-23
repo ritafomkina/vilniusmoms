@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
-  /* max-height: 100vh; */
-  /* max-width: 100vh; */
+  height: 100%;
+  width: 100%;
 }
 
 *,
@@ -10,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 a {
@@ -36,7 +36,7 @@ body {
   min-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   background-color: #d6d0c6;
   overflow: auto;
   overflow-x: hidden;
@@ -56,24 +56,30 @@ h6 {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: content-box;
-  padding: 0px 15px;
+  padding: 20px 15px;
+}
+
+.header {
+  flex: 0 0 auto;
+  min-height: 50px;
+  background-color: #e4dfd7;
+}
+
+.main {
+  background-color: #d6d0c6;
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 20px 0px;
+  background-color: #e4dfd7;
 }
 
 .section {
   min-height: 50px;
   padding: 15px 0px;
-  background-color: #d6d0c6;
-}
-
-.start-section {
-  background-color: #e4dfd7;
-}
-.pregnancy-section {
-  background-color: #d6d0c6;
-}
-
-.feedback-section {
-  padding: 20px 0px;
+  /* background-color: #d6d0c6; */
 }
 
 details {
@@ -164,6 +170,7 @@ table, th, td {
   color: #4b4744;
   margin-left: 10px;
   display: flex;
+  font-size: 20px;
 }
 .feedback-link::after {
   content: "";
@@ -179,21 +186,19 @@ table, th, td {
   color: #100d0b;
 }
 
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-  .section {
-    /* max-width: 100%; */
-  }
-  .wrapper {
-    max-width: 100%;
-    padding: 0px 22px;
-  }
-}
-
 @media screen and (min-width: 501px) and (max-width: 700px) {
   .wrapper {
     max-width: 100%;
-    padding: 0px 22px;
+    /* padding: 0px 22px; */
   }
+
+  .footer {
+    padding: 0;
+  }
+  .section {
+    padding: 10px 0px;
+  }
+
   details {
     padding: 5px 15px;
   }
@@ -212,7 +217,8 @@ table, th, td {
 @media screen and (min-width: 360px) and (max-width: 500px) {
   .wrapper {
     max-width: 100%;
-    padding: 0px 22px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
   details {
     padding: 5px 5px;
@@ -223,10 +229,14 @@ table, th, td {
     padding: 0;
     /* background-color: #d6d0c6; */
   }
-  .start-section {
-    padding: 20px 0px 15px;
+  .header {
+    padding: 0;
   }
-  .feedback-section {
+
+  .main {
+    padding: 20px 0px;
+  }
+  .footer {
     padding: 15px 0px;
 
   }
@@ -239,7 +249,7 @@ table, th, td {
     font-size: 25px;
   }
   .level-one-title {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .level-two-title {
