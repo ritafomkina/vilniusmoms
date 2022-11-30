@@ -1,3 +1,3 @@
 ## vilniusmoms
 
-_deployment link: https://vilniusmoms-holq.vercel.app/_
+_ link to deploy: https://vilniusmoms-holq.vercel.app/_
