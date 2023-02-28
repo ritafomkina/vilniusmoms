@@ -1,275 +1,264 @@
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
-}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/font/Inter/static/Inter-Regular.ttf") format('truetype');
+  }
 
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/font/Inter/static/Inter-Medium.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/assets/font/Inter/static/Inter-SemiBold.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/font/Inter/static/Inter-Bold.ttf") format('truetype');
+  }
+
+  html {
+    scroll-behavior: smooth;
+    width: 100vw;
+    /* overflow: hidden; */
+
+  }
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: content-box;
-}
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
 
 a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
 
 li {
-  /* list-style: none; */
-}
+    list-style: none;
+  }
 
 img {
-  vertical-align: top;
-}
-
-/*-------------general-styles-----------*/
+    vertical-align: top;
+  }
 
 body {
-  font-family: Georgia;
-  font-weight: 400;
-  font-size: 18px;
-  color: #4b4744;
-  min-height: 100%;
-  min-width: 100%;
+    min-width: 100%;
+    background-color: #FFFFFF;
+    font-family: "Inter", 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.desktop-container {
+  width: 100%;
+
+}
+.desktop-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 120px;
+    background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
+}
+
+.desktop-wrapper {
+  margin: 0px 137px;
+
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo {
+    position: relative;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+color: #FFFFFF;
+z-index: 2;
+}
+
+.logo::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/logo.png);
+    width: 381px;
+    height: 157px;
+    z-index: -1;
+    top: -49px;
+    left: -90px;
+}
+.header-nav {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #212121;
+}
+
+.header-list {
+    display: flex;
+    column-gap: 50px;
+}
+.nav-item {
+}
+
+.desktop-main {
+  width: 100%;
+}
+.start-section {
+    max-height: 644px;
+    background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
+    margin-bottom: 40px;
+}
+
+.start-wrapper {
+  margin-right: 0;
   display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  background-color: #e4dfd7;
-  overflow: auto;
-  overflow-x: hidden;
+  justify-content: space-between;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
+.start-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-width: 712px;
+    margin-top: 181px;
 }
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: content-box;
-  padding: 20px 15px;
+.start-title {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: #170C58;
 }
-
-.header {
-  flex: 0 0 auto;
-  min-height: 50px;
-  background-color: #e4dfd7;
-}
-
-.main {
-  background-color: #d6d0c6;
-  flex: 1 1 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
-  padding: 20px 0px;
-  background-color: #e4dfd7;
-}
-
-.section {
-  min-height: 50px;
-  padding: 15px 0px;
-  /* background-color: #d6d0c6; */
-}
-
-details {
-  padding: 5px 20px;
-}
-
-h1 {
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 90px;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 27px;
+.text {
 }
 
 .start-text {
-  padding: 20px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 636px;
 }
 
-.level-one-title {
-  font-weight: 400;
-  font-size: 30px;
+.add-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 24px;
+color: #FFFFFF;
+    margin-top: 15px;
+    width: 320px;
+height: 67px;
+background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
+
+}
+.start-img img {
+  display: block;
+}
+.pregnancy-section {
+}
+.section-separator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 44px;
+  margin-left: 137px;
+}
+.section-title {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 150px;
+color: #170C58;
+}
+.section-line {
+  /* width: calc(100% - 44px - 500px); */
+  display: block;
+height: 2px;
+background: #170C58;
+}
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 73px;
+  row-gap: 70px;
+}
+.info-container {
+  max-width: 393px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.info-img {
   margin-bottom: 10px;
 }
-.level-two-title {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 5px;
+.info-title {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #170C58;
 }
-.level-three-title {
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
-}
-.text-container {
-  margin: 10px 0px;
-}
+.info-desc {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
 
-.text {
-  margin: 10px 0px;
+color: #282828;
 }
-
-ol,
-ul {
-  padding: 0px 33px;
-}
-
-table, th, td {
-  border:1px solid black;
-}
-
-.link {
-  font-style: italic;
-  position: relative;
-  color: #0b0b0a;
-}
-
-.link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: rgb(47, 43, 43);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-
-.link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.link:hover,
-.link:visited {
-  color: #7e5b40;
-}
-
-.list-item {
-  margin-bottom: 5px;
-}
-
-.feedback-link {
-  color: #4b4744;
-  margin-left: 10px;
+.info-link {
   display: flex;
-  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 24px;
+  color: #FFFFFF;
+  Width: 320px;
+  height: 67px;
+  margin-top: 10px;
+  background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
 }
-.feedback-link::after {
-  content: "";
-  background-image: url(assets/logo/telegram-logo-svgrepo-com.svg);
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  margin-left: 3px;
-}
-
-.feedback-link:hover {
-  color: #100d0b;
-}
-
-@media screen and (min-width: 501px) and (max-width: 700px) {
-  .wrapper {
-    max-width: 100%;
-    padding: 20px 22px;
-  }
-
-  .footer {
-    padding: 0;
-  }
-  .section {
-    padding: 10px 0px;
-  }
-
-  details {
-    padding: 5px 15px;
-  }
-  h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .text {
-    font-size: 20px;
-  }
-  .start-text {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 500px) {
-  .wrapper {
-    max-width: 100%;
-    padding: 0px 22px;
-  }
-
-  details {
-    padding: 5px 5px;
-  }
-
-  .section {
-    min-height: 50px;
-    padding: 10px 0px;
-  }
-  .header {
-    padding: 0;
-  }
-
-  .main {
-    padding: 20px 0px;
-  }
-
-  .footer {
-    padding: 15px;
-  }
-
-  .feedback-link {
-    font-size: 17px;
-  }
-
-  h1 {
-    font-size: 38px;
-    line-height: 60px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  .level-one-title {
-    font-size: 30px;
-  }
-
-  .level-two-title {
-    font-size: 20px;
-  }
-
-  .level-three-title {
-    font-size: 18px;
-  }
-  .start-text {
-    padding: 15px 0px;
-  }
-
-  .text {
-    font-size: 18px;
-  }
-  .start-text {
-    font-size: 18px;
-  }
+.desktop-footer {
 }
