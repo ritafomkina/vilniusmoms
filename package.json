@@ -1,5 +1,28 @@
 {
   "dependencies": {
     "@vercel/analytics": "^0.1.3"
+  },
+  "name": "mums-in-vil",
+  "description": "link to deploy: https://vilniusmoms-holq.vercel.app/_",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritafomkina/vilniusmoms.git"
+  },
+  "keywords": [
+    "guide"
+  ],
+  "author": "margarita fomkina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritafomkina/vilniusmoms/issues"
+  },
+  "homepage": "https://github.com/ritafomkina/vilniusmoms#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0"
   }
 }

@@ -57,8 +57,10 @@ body {
     min-width: 100%;
     background-color: #FFFFFF;
     font-family: "Inter", 'Open Sans', sans-serif;
+    font-style: normal;
     font-size: 18px;
     font-weight: 400;
+    color: #170C58;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -91,8 +93,6 @@ body {
 }
 .logo {
     position: relative;
-    font-family: 'Inter';
-font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
@@ -112,10 +112,6 @@ z-index: 2;
     left: -90px;
 }
 .header-nav {
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
 line-height: 23px;
 color: #212121;
 }
@@ -149,11 +145,8 @@ color: #212121;
     margin-top: 181px;
 }
 .start-title {
-    font-family: 'Inter';
-font-style: normal;
 font-weight: 600;
 font-size: 40px;
-line-height: 50px;
 text-transform: uppercase;
 color: #170C58;
 }
@@ -161,9 +154,6 @@ color: #170C58;
 }
 
 .start-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
@@ -174,8 +164,6 @@ color: #170C58;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter';
-font-style: normal;
 font-weight: 600;
 font-size: 17px;
 line-height: 24px;
@@ -191,74 +179,50 @@ background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103
 }
 .pregnancy-section {
 }
-.section-separator {
-  width: 100%;
+
+.section-wrapper{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 44px;
-  margin-left: 137px;
+  flex-direction: column;
+  row-gap: 40px;
 }
+
 .section-title {
-  font-family: 'Inter';
-font-style: normal;
 font-weight: 600;
 font-size: 40px;
-line-height: 150px;
 color: #170C58;
+cursor: pointer;
 }
-.section-line {
-  /* width: calc(100% - 44px - 500px); */
-  display: block;
-height: 2px;
-background: #170C58;
-}
-.section-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 73px;
-  row-gap: 70px;
-}
+
 .info-container {
-  max-width: 393px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
-.info-img {
-  margin-bottom: 10px;
-}
-.info-title {
-  font-family: 'Inter';
-font-style: normal;
+.pregnancySubTitle {
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
 color: #170C58;
 }
 .info-desc {
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
 line-height: 23px;
 
 color: #282828;
 }
-.info-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 24px;
-  color: #FFFFFF;
-  Width: 320px;
-  height: 67px;
-  margin-top: 10px;
-  background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
+
+.article-body {
+  margin: 10px 20px;
 }
-.desktop-footer {
+
+.pregnancySubTitle-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding-left: 20px;
+
+}
+
+.article-title {
+  font-weight: 400;
+  font-size: 20px;
 }
