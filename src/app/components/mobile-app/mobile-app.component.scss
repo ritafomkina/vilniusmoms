@@ -1,0 +1,98 @@
+@import "../../../styles.scss";
+
+:host {
+ @include font(#000000, 400, 14px, 17px);
+}
+
+header{
+  min-height: 95px;
+  max-height: 200px;
+  @include flex(row, start, start);
+padding: 20px 20px 0px 20px;
+// background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
+}
+
+.logo {
+  @include font(#FFFFFF, 700, 15px, 17px);
+  position: relative;
+  text-transform: uppercase;
+z-index: 2;
+}
+
+.logo::before {
+  position: absolute;
+  content:'';
+  background-image: url('./../../../assets/logo-mobile.png');
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 95px;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.start-section {
+  padding: 25px 0px 0px;
+  @include flex(column, start, center);
+  row-gap: 15px;
+  // background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
+}
+
+.start-title {
+  @include font(#170C58, 700, 34px, 42px);
+  padding-left: 20px
+}
+
+.add-info {
+  @include flex(row, center, center);
+  margin: 15px 0px 0px 20px;
+  width: 170px;
+height: 50px;
+background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
+ a {
+  @include font(#FFFFFF, 600, 12px, 16px);
+ }
+}
+
+.start-text{
+  padding-left: 20px;
+}
+
+.start-img {
+  width: 370px;
+  height: 370px;
+align-self: end;
+}
+
+.wrapper {
+  @include flex(column, start, center);
+  row-gap: 20px;
+  padding: 30px 20px;
+}
+
+.footer{
+  @include font(#000000, 500, 12px, 17px);
+  @include flex(row, center, center);
+  height: 50px;
+  background: linear-gradient(90deg, #C4D0E7 0%, #90ACD1 100%);
+}
+
+.level-one-title {
+  @include font(#170C58, 600, 20px, 24px);
+}
+
+.level-two-title {
+  @include font(#170C58, 500, 18px, 20px);
+}
+
+.level-three-title {
+  @include font(#170C58, 400, 16px, 18px);
+}
+
+.text, link {
+  @include font(#170C58, 400, 14px, 18px);
+}

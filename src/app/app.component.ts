@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+})
+export default class AppComponent {
+  title = 'mums-app';
+
+  public sections = ['Беременность', 'Малыш родился', 'Тоддлер', 'Полезные ссылки'];
+}
