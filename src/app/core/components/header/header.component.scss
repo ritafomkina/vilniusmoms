@@ -21,7 +21,7 @@
   .logo::before {
     position: absolute;
     content: "";
-    background-image: url(./../../../../assets/logo.png);
+    background-image: url('./../../../../assets/logo.png');
     width: 381px;
     height: 157px;
     z-index: -1;
