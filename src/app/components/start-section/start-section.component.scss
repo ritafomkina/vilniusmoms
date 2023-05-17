@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+:host {
+  background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
+  padding: 0px 0px 0px 60px;
+  @include flex(row, center, space-between)
+}
+
+.start-info {
+  @include flex(column, center, center);
+  row-gap: 15px;
+  max-width: 712px;
+  margin-top: 181px;
+}
+
+.start-title {
+@include font(#170C58, 600, 35px, 50px);
+text-transform: uppercase;
+}
+.text {
+}
+
+.start-text {
+  @include font(#000000, 400, 16px, 24px);
+  max-width: 636px;
+}
+
+.add-info {
+  @include font(#FFFFFF, 600, 16px, 24px);
+  @include flex(row, center, center);
+  margin-top: 15px;
+  width: 320px;
+height: 67px;
+background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
+}
+.start-img img {
+display: block;
+width: 700px;
+}
