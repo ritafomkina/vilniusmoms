@@ -8,7 +8,7 @@
 }
 
 .info-container {
-  @include flex(column, start, space-between);
+  @include flex(column, flex-start, space-between);
   width: 350px;
   height: 510px;
 }

@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 :host{
-  @include flex(column, start, center);
+  @include flex(column, flex-start, center);
   flex-wrap: wrap;
   row-gap: 15px;
   padding: 0px 60px 20px;
