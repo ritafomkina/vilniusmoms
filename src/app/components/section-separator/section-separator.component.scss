@@ -3,7 +3,7 @@
 
 :host {
   width: 100%;
-  @include flex(row, center, start);
+  @include flex(row, center, flex-start);
   column-gap: 30px;
   // margin-left: 137px;
   padding: 60px 0px 60px 60px;
