@@ -6,8 +6,8 @@ import { NoopScrollStrategy } from '@angular/cdk/overlay';
 import AppRoutingModule from './app-routing.module';
 import Core from './core/core.module';
 import Shared from './shared/shared.module';
-import DesktopAppModule from './desktop-app/desktop-app.module';
 import AppComponent from './app.component';
+import DesktopAppModule from './desktop-app/desktop-app.module';
 // import MobileAppComponent from './components/mobile-app/mobile-app.component';
 @NgModule({
   declarations: [

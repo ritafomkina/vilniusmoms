@@ -5,6 +5,7 @@
   @include flex(column, flex-start, flex-start);
   @include font(#000000, 400, 16px, 24px);
   max-width: 800px;
+  background-color: red;
 }
 
 .actions{

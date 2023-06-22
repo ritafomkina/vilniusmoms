@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
+import { DialogData } from '../models/dialog.model';
 import SectionNameService from './section-name.service';
 
 @Injectable({
@@ -28,12 +29,12 @@ export default class DialogService {
     this.open.next(false);
   }
 
-  private sourceData = new BehaviorSubject<[string, string]>(['default', 'default']);
+  private sourceData = new BehaviorSubject<DialogData>({ section: 'default', topic: 'default' });
 
   public currentSourceData = this.sourceData.asObservable();
 
-  public setSourceData(section: string, topic: string): void {
-    this.sourceData.next([section, topic]);
+  public setSourceData(dialogData: DialogData): void {
+    this.sourceData.next(dialogData);
   }
 
   public toggleScrolling() {

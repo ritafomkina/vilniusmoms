@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DialogModule } from '@angular/cdk/dialog';
+import { RouterModule } from '@angular/router';
 import Core from '../core/core.module';
 
 import DesktopAppRoutingModule from './desktop-app-routing.module';
@@ -27,7 +29,12 @@ import SharedModule from '../shared/shared.module';
     CommonModule,
     SharedModule,
     Core,
+    // RouterModule,
     DesktopAppRoutingModule,
+    // DialogModule,
+  ],
+  exports: [
+    MainComponent,
   ],
 })
 export default class DesktopAppModule { }

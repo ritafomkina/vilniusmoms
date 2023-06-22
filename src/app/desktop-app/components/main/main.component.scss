@@ -1,16 +1,5 @@
 @import "../../../../styles.scss";
 
-.position-fixed {
-  position: fixed;
-  top: calc((100vh / 2) - (500px /2));
-  left: calc((100vw / 2) - (900px /2));
-  width: 800px;
-  height: 500px;
-  z-index: 5;
-  align-self: center;
-  background-color: #292929;
-  display: flex;
-  background: #FAFAFA;
-border-radius: 9px;
-transition: all 1.5s;
+:host {
+position: relative;
 }

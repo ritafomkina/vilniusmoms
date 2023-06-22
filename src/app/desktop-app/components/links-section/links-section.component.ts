@@ -22,7 +22,9 @@ export default class LinksSectionComponent {
     // this.sectionName.openedSection('pregnancy');
     // this.dialogService.toggleScrolling();
     this.router.navigate(['dialog']);
-    this.dialogService.setTopic(topic);
-    this.sectionName.openedSection('links');
+    this.dialogService.setSourceData({ section: 'pregnancy', topic });
+    // this.router.navigate(['dialog']);
+    // this.dialogService.setTopic(topic);
+    // this.sectionName.openedSection('links');
   }
 }

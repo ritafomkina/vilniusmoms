@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import MainComponent from './desktop-app/components/main/main.component';
 
 const routes: Routes = [
+  // {
+  //   path: 'dialog',
+  //   loadChildren: () => import('./dialog/dialog.module').then((m) => m.default),
+  //   outlet: 'dialog',
+  // },
   {
-    path: '', component: MainComponent,
+    path: '',
+    loadChildren: () => import('./desktop-app/desktop-app.module').then((m) => m.default),
+    // children: [
+    //   {
+    //     path: 'dialog',
+    //     loadChildren: () => import('./dialog/dialog.module').then((m) => m.default),
+    //   },
+    // ],
   },
 ];
 

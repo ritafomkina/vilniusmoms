@@ -19,26 +19,46 @@ export default class DialogTemplateComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('init dialog');
-    this.dialogService.currentTopic.subscribe((topic) => {
-      if (
-        topic === 'registration'
-        || topic === 'price'
-        || topic === 'documents') {
-        this.router.navigate(['choose-country']);
-      } else if (topic === 'insurance') {
+    this.dialogService.currentSourceData.subscribe((data) => {
+      console.log(data);
+      if (data.topic === 'registration'
+      || data.topic === 'price'
+      || data.topic === 'documents') {
+        this.router.navigate(['choose']);
+      } else if (data.topic === 'insurance') {
         this.router.navigate(['choose-insurance']);
       } else {
-        this.sectionName.currentSection.subscribe((name) => {
-          this.router.navigate([name, topic]);
-        });
+        this.router.navigate([data.section, data.topic]);
         this.isInfoDialog = true;
         this.dialogService.isOpened();
-        // this.Dialog.currentDialog.close();
-        this.dialogService.currentDialog.afterClosed().subscribe(
-          () => this.dialogService.isClosed(),
-        );
-        this.dialogService.toggleScrolling();
       }
+      // this.dialogService.currentDialog.afterClosed().subscribe(
+      //   () => this.dialogService.isClosed(),
+      // );
+      // this.dialogService.toggleScrolling();
     });
+
+    // console.log('init dialog');
+    // this.dialogService.currentTopic.subscribe((topic) => {
+    //   if (
+    //     topic === 'registration'
+    //     || topic === 'price'
+    //     || topic === 'documents') {
+    //     this.router.navigate(['choose-country']);
+    //   } else if (topic === 'insurance') {
+    //     this.router.navigate(['choose-insurance']);
+    //   } else {
+    //     this.sectionName.currentSection.subscribe((name) => {
+    //       this.router.navigate([name, topic]);
+    //     });
+    //     this.isInfoDialog = true;
+    //     this.dialogService.isOpened();
+    //     // this.Dialog.currentDialog.close();
+    //     this.dialogService.currentDialog.afterClosed().subscribe(
+    //       () => this.dialogService.isClosed(),
+    //     );
+    //     this.dialogService.toggleScrolling();
+    // }
+    // });
   }
 }

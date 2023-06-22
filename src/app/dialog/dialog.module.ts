@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// import { RouterModule } from '@angular/router';
 import DialogRoutingModule from './dialog-routing.module';
 import SharedModule from '../shared/shared.module';
 import DialogTemplateComponent from './components/dialog-template/dialog-template.component';
@@ -17,6 +18,7 @@ import ChooseInsuranseComponent from './components/choose-insurance/choose-insur
     CommonModule,
     DialogRoutingModule,
     SharedModule,
+    // RouterModule,
   ],
 })
 export default class DialogModule { }

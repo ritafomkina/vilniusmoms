@@ -26,7 +26,9 @@ export default class BirthSectionComponent {
     // this.sectionName.openedSection('pregnancy');
     // this.dialogService.toggleScrolling();
     this.router.navigate(['dialog']);
-    this.dialogService.setTopic(topic);
-    this.sectionName.openedSection('birth');
+    this.dialogService.setSourceData({ section: 'pregnancy', topic });
+    // this.router.navigate(['dialog']);
+    // this.dialogService.setTopic(topic);
+    // this.sectionName.openedSection('birth');
   }
 }

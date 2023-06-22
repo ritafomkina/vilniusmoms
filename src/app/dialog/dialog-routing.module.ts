@@ -5,17 +5,21 @@ import ChooseInsuranseComponent from './components/choose-insurance/choose-insur
 import DialogTemplateComponent from './components/dialog-template/dialog-template.component';
 
 const routes: Routes = [
-  { path: '', component: DialogTemplateComponent },
-  { path: 'choose-country', component: ChooseCountryDialogComponent },
-  { path: 'choose-insurance', component: ChooseInsuranseComponent },
+
   {
-    path: 'pregnancy', loadChildren: () => import('../pregnancy/pregnancy.module').then((m) => m.default),
-  },
-  {
-    path: 'birth', loadChildren: () => import('../birth/birth.module').then((m) => m.default),
-  },
-  {
-    path: 'toddler', loadChildren: () => import('../toddler/toddler.module').then((m) => m.default),
+    path: '',
+    component: DialogTemplateComponent,
+    children: [
+      { path: 'choose', component: ChooseCountryDialogComponent },
+      { path: 'choose-insurance', component: ChooseInsuranseComponent },
+      { path: 'pregnancy', loadChildren: () => import('../pregnancy/pregnancy.module').then((m) => m.default) },
+      {
+        path: 'birth', loadChildren: () => import('../birth/birth.module').then((m) => m.default),
+      },
+      {
+        path: 'toddler', loadChildren: () => import('../toddler/toddler.module').then((m) => m.default),
+      },
+    ],
   },
 ];
 
