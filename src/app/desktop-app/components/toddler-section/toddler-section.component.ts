@@ -19,16 +19,12 @@ export default class ToddlerSectionComponent {
 
   cards = this.dataService.getData();
 
-  openDialog(topic: string) {
-    // this.dialogService.currentDialog = this.dialog.open(DialogTemplateComponent, {
-    //   data: topic,
-    // });
-    // this.sectionName.openedSection('pregnancy');
-    // this.dialogService.toggleScrolling();
-    this.router.navigate(['dialog']);
-    this.dialogService.setSourceData({ section: 'pregnancy', topic });
-    // this.router.navigate(['dialog']);
-    // this.dialogService.setTopic(topic);
-    // this.sectionName.openedSection('pregnancy');
+  openDialog($event: MouseEvent, topic: string) {
+    $event.stopPropagation();
+    const root = { section: 'toddler', topic };
+    this.dialogService.setSourceData(root);
+    this.dialogService.isOpened();
+    document.body.classList.add('noscroll');
+    this.router.navigate([root.section, root.topic]);
   }
 }

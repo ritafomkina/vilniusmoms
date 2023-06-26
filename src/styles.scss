@@ -71,6 +71,10 @@ body {
   // box-sizing: border-box;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 @mixin font ($color, $weight: 400, $size: 18px, $heigth: 14px) {
   font-family: 'Inter';
   font-style: normal;

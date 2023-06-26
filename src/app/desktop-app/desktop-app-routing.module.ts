@@ -8,8 +8,20 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: 'dialog',
-        loadChildren: () => import('../dialog/dialog.module').then((m) => m.default),
+        path: 'pregnancy',
+        loadChildren: () => import('../pregnancy/pregnancy.module').then((m) => m.default),
+      },
+      {
+        path: 'birth',
+        loadChildren: () => import('../birth/birth.module').then((m) => m.default),
+      },
+      {
+        path: 'toddler',
+        loadChildren: () => import('../toddler/toddler.module').then((m) => m.default),
+      },
+      {
+        path: 'links',
+        loadChildren: () => import('../links/links.module').then((m) => m.default),
       },
     ],
   },

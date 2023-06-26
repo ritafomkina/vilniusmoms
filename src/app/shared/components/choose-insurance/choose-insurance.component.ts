@@ -17,12 +17,8 @@ export default class ChooseInsuranseComponent {
 
   ) {}
 
-  openDialog(insurance: string) {
-    this.routerParams.params.subscribe(
-      (params) => this.router.navigate([params, insurance]),
-    );
-    this.dialogService.isOpened();
-    this.dialogService.currentDialog.close();
-    // document.body.classList.add('no-scroll');
+  openDialog($event: MouseEvent, insurance: string) {
+    $event.stopPropagation();
+    this.router.navigateByUrl(`pregnancy/insurance/${insurance}`);
   }
 }

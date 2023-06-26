@@ -17,16 +17,22 @@ export default class DialogService {
 
   public currentDialog: MatDialogRef<any>;
 
+  toggleScroll() {
+    document.body.classList.toggle('noscroll');
+  }
+
   private open = new BehaviorSubject<boolean>(false);
 
   public currentDialogStatus = this.open.asObservable();
 
   public isOpened(): void {
     this.open.next(true);
+    this.toggleScroll();
   }
 
   public isClosed(): void {
     this.open.next(false);
+    this.toggleScroll();
   }
 
   private sourceData = new BehaviorSubject<DialogData>({ section: 'default', topic: 'default' });

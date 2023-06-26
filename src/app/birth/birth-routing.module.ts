@@ -7,25 +7,16 @@ import DocumentsBELComponent from './components/documents-bel/documents-bel.comp
 import DocumentsRUComponent from './components/documents-ru/documents-ru.component';
 import MamashealthComponent from './components/mamashealth/mamashealth.component';
 import DadsBenefitsComponent from './components/dads-benefits/dads-benefits.component';
+import ChooseCountryDialogComponent from '../shared/components/choose-country-dialog/choose-country-dialog.component';
 
 const routes: Routes = [
   {
     path: 'clinic', component: ClinicComponent,
   },
-  {
-    path: 'documents',
-    children: [
-      {
-        path: 'UA', component: DocumentsUAComponent,
-      },
-      {
-        path: 'BEL', component: DocumentsBELComponent,
-      },
-      {
-        path: 'RU', component: DocumentsRUComponent,
-      },
-    ],
-  },
+  { path: 'documents', component: ChooseCountryDialogComponent },
+  { path: 'documents/UA', component: DocumentsUAComponent },
+  { path: 'documents/BEL', component: DocumentsBELComponent },
+  { path: 'documents/RU', component: DocumentsRUComponent },
   {
     path: 'health', component: MamashealthComponent,
   },
