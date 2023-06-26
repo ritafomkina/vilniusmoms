@@ -1,9 +1,6 @@
 {
   "name": "mums-app",
   "version": "0.0.0",
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,10 +23,10 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "eslint-config-airbnb": "^19.0.4",
-    "ajv": "^8.11.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0"
+    "zone.js": "~0.12.0",
+    "ajv": "^8.11.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.8",
