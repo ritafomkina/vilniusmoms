@@ -23,7 +23,6 @@ export default class ChooseCountryDialogComponent implements OnInit {
     this.doalogService.currentSourceData.subscribe((data) => {
       this.section = data.section;
       this.topic = data.topic;
-      console.log(this.topic);
     });
   }
 
