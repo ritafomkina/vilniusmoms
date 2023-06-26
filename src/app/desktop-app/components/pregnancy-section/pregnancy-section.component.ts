@@ -22,16 +22,11 @@ export default class PregnancySectionComponent {
   cards = this.dataService.getData();
 
   openDialog($event: MouseEvent, topic: string) {
-    // this.dialogService.currentDialog = this.dialog.open(DialogTemplateComponent);
-    // this.dialogService.openDialog(topic);
-    // console.log('open dialog');
-    // this.router.navigate(['dialog']);
     $event.stopPropagation();
     const root = { section: 'pregnancy', topic };
     this.dialogService.setSourceData(root);
     this.dialogService.isOpened();
     document.body.classList.add('noscroll');
     this.router.navigate([root.section, root.topic]);
-    // this.sectionName.openedSection('pregnancy');
   }
 }
