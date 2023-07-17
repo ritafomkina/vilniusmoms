@@ -1,13 +1,12 @@
 @import "../../../../styles.scss";
 
 :host {
-  @include flex(row, center, center);
+  @include flex(row, center, space-between);
     min-width: 100%;
     max-width: 1320px;
     height: 120px;
     padding: 0px 137px;
     background: linear-gradient(90deg, #FBFBFB 0%, #FAF3FC 100%);
-    column-gap: 160px;
   }
 
 
@@ -38,7 +37,7 @@
   }
 
   .header-list {
-    display: flex;
+    @include flex(row, center, space-between);
     column-gap: 50px;
   }
 
@@ -67,8 +66,44 @@
     transform-origin: bottom left;
   }
 
-  @media screen and (min-width: 701px) and (max-width: 700px) {
-    .desktop-wrapper {
+
+  @media screen and (min-width: 1155px) and (max-width: 1265px) {
+    .header-list {
+      column-gap: 30px;
+    }
+    :host {
+        padding: 0px 110px;
+    }
+  }
+
+  @media screen and (min-width: 1055px) and (max-width: 1154px) {
+    .header-list {
+      column-gap: 20px;
+    }
+    :host {
+      padding-left: 100px;
+      padding-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 1054px) {
+    :host{
+      height: 90px;
+      padding: 0px 10px;
+    }
+    .header-nav {
       display: none;
+    }
+    .logo::before {
+      background-image: url('./../../../../assets/logo-mobile.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 370px;
+      height: 100px;
+top: -35px;
+left: -10px;
+    }
+    .logo {
+      @include font(#FFFFFF, 600, 14px, 20px);
     }
   }

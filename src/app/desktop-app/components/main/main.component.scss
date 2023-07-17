@@ -46,3 +46,37 @@ position: relative;
   height: 50px;
   margin-left: 24px;
 }
+
+@media screen and (min-width: 400px) and (max-width: 1054px) {
+  .desktop-content{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1055px) and (max-width: 2000px) {
+  .mobile-content{
+    display: none;
+  }
+}
+
+.mobile-content{
+padding: 50px 30px;
+  @include flex(column, flex-start, flex-start);
+  row-gap: 30px;
+}
+
+.section-name{
+  @include flex(row, center, flex-start);
+  @include font(#170C58, 600, 20px, 125%);
+  column-gap: 20px;
+}
+.section-name::before{
+  content: "";
+  background-image: url('./../../../../assets/open-icon.svg');
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 25px;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
