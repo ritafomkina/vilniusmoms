@@ -1,6 +1,4 @@
-// import { LocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-// import { Router } from '@angular/router';
 import DialogService from 'src/app/services/dialog.service';
 
 @Component({
@@ -11,8 +9,6 @@ import DialogService from 'src/app/services/dialog.service';
 export default class DesktopContentComponent implements OnInit {
   constructor(
     private dialogService: DialogService,
-    // private router: Router,
-    // private locationStrategy: LocationStrategy,
   ) {
   }
 
@@ -23,7 +19,6 @@ export default class DesktopContentComponent implements OnInit {
   ngOnInit(): void {
     this.dialogService.currentDialogStatus.subscribe((status) => {
       this.dialog = status;
-      console.log(this.dialog);
     });
   }
 

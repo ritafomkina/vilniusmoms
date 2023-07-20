@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import DialogService from 'src/app/services/dialog.service';
 import { LocationStrategy } from '@angular/common';
 import { Router } from '@angular/router';
@@ -9,7 +9,7 @@ import ModeService from './services/mode.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export default class AppComponent {
+export default class AppComponent implements OnInit {
   title = 'mums-app';
 
   constructor(

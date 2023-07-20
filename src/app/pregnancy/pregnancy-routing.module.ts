@@ -10,8 +10,6 @@ import RegistrationBELComponent from './components/registration-bel/registration
 import RegistrationUAComponent from './components/registration-ua/registration-ua.component';
 import VeiklaComponent from './components/veikla/veikla.component';
 
-console.log('preg losded');
-
 const routes: Routes = [
   {
     path: 'registration',

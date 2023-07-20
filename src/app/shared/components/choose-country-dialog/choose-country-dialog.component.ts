@@ -20,7 +20,6 @@ export default class ChooseCountryDialogComponent implements OnInit {
   private topic: string;
 
   ngOnInit(): void {
-    console.log('init choose');
     this.doalogService.currentSourceData.subscribe((data) => {
       this.section = data.section;
       this.topic = data.topic;
