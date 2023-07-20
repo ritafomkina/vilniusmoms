@@ -10,6 +10,8 @@ import RegistrationBELComponent from './components/registration-bel/registration
 import RegistrationUAComponent from './components/registration-ua/registration-ua.component';
 import VeiklaComponent from './components/veikla/veikla.component';
 
+console.log('preg losded');
+
 const routes: Routes = [
   {
     path: 'registration',
@@ -34,4 +36,6 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export default class PregnancyRoutingModule { }
+export default class PregnancyRoutingModule {
+
+}

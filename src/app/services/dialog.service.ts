@@ -3,7 +3,6 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { DialogData } from '../models/dialog.model';
-import SectionNameService from './section-name.service';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +10,6 @@ import SectionNameService from './section-name.service';
 export default class DialogService {
   constructor(
     private router: Router,
-    private sectionName: SectionNameService,
   ) {
   }
 
@@ -45,32 +43,18 @@ export default class DialogService {
 
   public toggleScrolling() {
     document.body.classList.add('no-scroll');
-    // this.openedSharedDialog?.afterClosed().subscribe(
-    //   () => {
-    //     this.currentDialogStatus.subscribe(
-    //   (state) => (state
-    //   ? document.body.classList.add('no-scroll')
-    //   : document.body.classList.remove('no-scroll')));
-    //  },
-    // );
     this.currentDialog?.afterClosed().subscribe(() => {
       document.body.classList.remove('no-scroll');
       this.isClosed();
     });
   }
 
-  public openDialog(topic: string) {
-    if (
-      topic === 'registration'
-      || topic === 'price'
-      || topic === 'documents') {
-      this.router.navigate(['dialog', 'choose-country']);
-    } else if (topic === 'insurance') {
-      this.router.navigate(['dialog', 'choose-insurance']);
-    } else {
-      this.sectionName.currentSection.subscribe((name) => {
-        this.router.navigate(['dialog', name, topic]);
-      });
-    }
+  public openDialog($event: MouseEvent, section: string, topic: string) {
+    $event.stopPropagation();
+    const root = { section, topic };
+    this.setSourceData(root);
+    this.isOpened();
+    document.body.classList.add('noscroll');
+    this.router.navigate([root.section, root.topic]);
   }
 }

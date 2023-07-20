@@ -1,26 +1,20 @@
-import { Component } from '@angular/core';
-import DialogService from 'src/app/services/dialog.service';
 import { LocationStrategy } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import ModeService from './services/mode.service';
+import DialogService from 'src/app/services/dialog.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-dialog-template',
+  templateUrl: './dialog-template.component.html',
+  styleUrls: ['./dialog-template.component.scss'],
 })
-export default class AppComponent {
-  title = 'mums-app';
-
+export default class DialogTemplateComponent implements OnInit {
   constructor(
     private dialogService: DialogService,
     private router: Router,
     private locationStrategy: LocationStrategy,
-    private mode: ModeService,
   ) {
   }
-
-  public isMobileMode = false;
 
   public dialog = false;
 
@@ -28,7 +22,6 @@ export default class AppComponent {
     this.dialogService.currentDialogStatus.subscribe((status) => {
       this.dialog = status;
     });
-    this.isMobileMode = this.mode.isMobileMode();
   }
 
   public closeDialog($event: MouseEvent) {

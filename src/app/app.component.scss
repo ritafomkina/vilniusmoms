@@ -1,11 +1,46 @@
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .desktop-wrapper {
+@import "../styles.scss";
+
+:host {
+position: relative;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1054px) {
+  .desktop-content{
     display: none;
   }
 }
 
-@media screen and (min-width: 701px) {
-  .mobile-wrapper {
+@media screen and (min-width: 1055px) and (max-width: 2000px) {
+  .mobile-content{
     display: none;
   }
 }
+
+// @media screen and (min-width: 900px) and (max-width: 1054px) {
+//   :host {
+//     width: 900px;
+//     max-height: 700px;
+//   }
+// }
+
+
+// @media screen and (min-width: 800px) and (max-width: 899px) {
+//   :host {
+//     width: 800px;
+//     max-height: 700px;
+//   }
+// }
+
+// @media screen and (min-width: 600px) and (max-width: 799px) {
+//   :host {
+//     width: 600px;
+//     max-height: 700px;
+//   }
+// }
+
+// @media screen and (min-width: 400px) and (max-width: 599px) {
+//   :host {
+//     width: 400px;
+//     max-height: 700px;
+//   }
+// }
