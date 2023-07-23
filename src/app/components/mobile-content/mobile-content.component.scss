@@ -38,6 +38,7 @@
   list-style: none;
   @include flex(row, flex-start, flex-start);
   column-gap: 10px;
+  text-align: start;
 }
 .subtitle::before {
   content: "\25CF";
@@ -61,37 +62,7 @@ button {
 
 .subtitles-container {
   padding: 10px 0px 10px 20px;
-  @include font(#170c58, 400, 25px, 24px);
+  @include font(#170c58, 400, 23px, 24px);
   @include flex(column, flex-start, flex-start);
   row-gap: 25px;
-}
-
-
-@media screen and (min-width: 900px) and (max-width: 1054px) {
-  .dialog {
-    max-width: 900px;
-    max-height: 700px;
-  }
-}
-
-
-@media screen and (min-width: 800px) and (max-width: 899px) {
-  .dialog {
-    max-width: 800px;
-    max-height: 700px;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .dialog {
-    max-width: 600px;
-    max-height: 700px;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 599px) {
-  .dialog{
-    max-width: 400px;
-    max-height: 700px;
-  }
 }

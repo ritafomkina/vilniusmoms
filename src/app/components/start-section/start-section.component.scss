@@ -25,7 +25,6 @@ text-transform: uppercase;
 .add-info {
   @include font(#FFFFFF, 600, 16px, 24px);
   @include flex(row, center, center);
-  margin-top: 15px;
   width: 320px;
 height: 67px;
 background: linear-gradient(45.72deg, #4E0F97 16.58%, #6442D3 61.4%, #BAB4E9 103.95%);
